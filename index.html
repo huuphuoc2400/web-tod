@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/main.js" defer></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="h-creen flex justify-center ">
+        <h1 class=" text-8xl text-red-800 font-normal pt-[50px]"> todos</h1>
+    </div>
+    <div class="h-creen flex flex-col items-center justify-center pt-[37px] border-x-2">
+        <div class="relative">
+            <svg class="absolute top-6 left-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-chevron-down">
+                <path d="m6 9 6 6 6-6" />
+            </svg>
+            <input id="input" class="w-[549px] h-[65px]  pt-[16px] pb-[16px] pr-[16px] pl-[60px] font-semibold text-xl italic 
+        active:outline-red-600 focus-visible:outline-red-600" type="text" Placeholder="What needs to be done?">
+        </div>
+        <ul class=" w-[549px] bg-white " id="list"></ul>
+
+        <div class="flex justify-between w-[549px] bg-white px-3 py-2 border" id="footer">
+            <span>1 item left!</span>
+            <div class="flex gap-3">
+                <span class="border border-red-300 px-2 py-1">All</span>
+                <span class="hover:border border-red-300 cursor-pointer px-2 py-1">Active</span>
+                <span class="hover:border border-red-300 cursor-pointer px-2 py-1">Complete</span>
+            </div>
+            <span class="hover:underline decoration-1 cursor-pointer">Clear complete</span>
+        </div>
+    </div>
+
+
+   
+
+
+    <div class=" h-creen text-center text-base justify-center pt-[67px] ">
+        <p> Double-click to edit todo </p>
+        <p> Created by the TodoMVC Team </p>
+        <p> Part-of
+            <a href="http://todomvc.com">TodoMVC</a>
+        </p>
+    </div>
+
+
+</body>
+
+</html>
